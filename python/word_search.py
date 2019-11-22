@@ -3,7 +3,8 @@ search = input("Enter a word:")
 try:
     myDict = PyDictionary(search)
     print("Meanng")
-    print(myDict.getMeanings())
+    meaning = myDict.getMeanings()
+
     print("Synonym")
     print(myDict.getSynonyms())
 except:
