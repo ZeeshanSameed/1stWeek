@@ -6,6 +6,15 @@ while c != "no":
     url = api_address + city
     json_data = requests.get(url).json()
     j_data = json_data['main']["temp"]
+    cal = j_data - 273.15
+    f = j_data * 9/5 - 459.67
+    print(city)
+    print("Temperature in kelvin is:")
     print(j_data)
+    print("Temperature in celsius is:")
+    print(cal)
+    print("Temperature in Fahrenheit is:")
+    print(f)
+
     print("Do you want to search for another cty name?")
     c = input ("type yes or no \n")
